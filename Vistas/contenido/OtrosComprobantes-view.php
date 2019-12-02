@@ -1,0 +1,1 @@
+<br><center> <h1>Otros Comprobantes</h1></center>

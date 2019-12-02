@@ -1,0 +1,1 @@
+<br><center> <h1>Recibos de Ingesos</h1></center>

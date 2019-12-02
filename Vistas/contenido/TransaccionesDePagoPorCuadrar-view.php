@@ -1,0 +1,1 @@
+<br><center> <h1>Transacciones De Pago Por Cuadrar</h1></center>

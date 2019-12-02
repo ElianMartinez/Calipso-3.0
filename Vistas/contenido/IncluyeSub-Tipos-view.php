@@ -1,0 +1,1 @@
+<br><center> <h1>Incluye Sub-Tipos</h1></center>

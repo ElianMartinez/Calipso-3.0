@@ -1,0 +1,1 @@
+<br><center><h1>Ventas Contados</h1></center>

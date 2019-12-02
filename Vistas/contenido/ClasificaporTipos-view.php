@@ -1,0 +1,1 @@
+<br><center> <h1>Clasifica por Tipos</h1></center>

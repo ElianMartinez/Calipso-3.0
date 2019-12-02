@@ -1,0 +1,1 @@
+<br><center> <h1>Detalles de Documentos</h1></center>

@@ -1,0 +1,1 @@
+<br><center>Pagos Con Tarjeta</h1></center>

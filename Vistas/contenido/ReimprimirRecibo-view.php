@@ -1,0 +1,1 @@
+<br><center> <h1>Reimprimir Recibo</h1></center>
