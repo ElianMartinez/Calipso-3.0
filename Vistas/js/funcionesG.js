@@ -100,7 +100,7 @@ $(document).ready(function(){
      
 
         function accc(){
-            $('.bttool').tooltip();
+          $('.bttool').tooltip();
       
           }
         function MostrarDatos(urrl){

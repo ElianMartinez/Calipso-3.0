@@ -16,7 +16,8 @@
   
    
     <!-- chart c3 js -->
-  
+
+  <script src="<?php echo SERVERURL; ?>Vistas/js/jquery.mask.min.js"></script>
 
     <script src="<?php echo SERVERURL; ?>Vistas/assets/libs/js/dashboard-ecommerce.js"></script>
     <script src="<?php echo SERVERURL; ?>Vistas/js/sweetalert2.min.js"></script>

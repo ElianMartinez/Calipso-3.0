@@ -46,7 +46,7 @@
                   <div class="form-group form-group-sm  col-sm-6">
                     <div class="row">
                       <label for="City" class="col-sm-7 col-form-label">SEXO</label>
-                      <div class="col-sm-9">
+                      <div class="col-sm-9 input-md">
                         <select name="Sexo" class="form-control" id="Sexo">
                           <option value="M">MASCULINO</option>
                           <option value="F">FEMENINO</option>
@@ -129,44 +129,57 @@
   <!--   Big container   -->
   <div class="Registrogrupos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 App2">
     <div class="card">
+      <div class="form-group">
+        <div class="row">
+          <div style="margin-top:0px;" class="col">
+            <button id="back" class="btn btn-dark"><i class="fas fa-arrow-left"></i></button>
+          </div>
+        </div>
+        <center>
+          <h5 class="col-xl-4 col-lg-8 col-md-9 display-7"><b class="TituloAE"></b> Vendedores</h5>
+        </center>
 
+      </div>
       <div class="card-body">
         <div class="row">
-          <div class="col form-group ">
+          <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12  form-group ">
             <label for="last_name" class="form-label">TIPO DE VENDEDOR</label>
             <select required="" class="mostrarTipoV form-control" name="tipoVV" id="tipoV">
 
             </select>
           </div>
-          <div class="col form-group">
+          <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 form-group">
             <label for="last_name" class="form-label">NOMBRE DE VENDEDOR</label>
-            <input type="text" name="nombreV" id="nombreV" class="form-control"
+            <input type="text" name="nombreV" id="nombreV" class="form-control "
               placeholder="Ingrese el nombre del vendedor">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <label for="cedulaV">SEXO</label>
             <select name="Sexo" class="form-control" id="SexoV">
               <option value="M">MASCULINO</option>
               <option value="F">FEMENINO</option>
             </select>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <label for="estado_c">ESATDO CIVIL</label>
             <select name="estado_c" class="form-control" id="estado_c">
               <option value="C">CASADO</option>
               <option value="S">SORTERO</option>
             </select>
           </div>
-          <div class="col">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <label for="cedulaV">CÉDULA</label>
-            <input type="number" class="form-control" name="cedulaV" id="cedulaV" placeholder="xxx-xxxxxxx-x">
+            <input type="text" class="form-control" name="cedulaV" id="cedulaV" placeholder="xxx-xxxxxxx-x">
           </div>
         </div>
 
-
+          <br>
+          .
+        <button type="button"  class="btn btn-success">Guardar  <i class="fas fa-plus"></i></button>
+        
 
       </div>
     </div>
@@ -212,7 +225,7 @@
   });
 
   $(document).ready(function () {
-
+   
     MostrarDatos('<?php echo SERVERURL;?>Ajax/VendedoresAjax.php');
     let id = "sdsa";
     $.ajax({
@@ -240,6 +253,10 @@
     $(".FormularioAjax")[0].reset();
 
   });
+
+  $(document).ready(function(){
+    $("#cedulaV").mask("999-99999999-9");
+});
 
 
 

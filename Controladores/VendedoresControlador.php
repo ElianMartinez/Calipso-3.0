@@ -104,8 +104,6 @@ if ($peticionAjax == true) {
                   ]; 
                }
                else{
-
-               
                $FilasCiudad = VendedoresModelo::Insertar_Vendedores_Modelo($datos);
                $url = SERVERURL."Ajax/VendedoresAjax.php";
                   if($FilasCiudad->rowCount() >= 1){
@@ -160,9 +158,9 @@ if ($peticionAjax == true) {
 
                    public function BorrarVendedores($Id){
            
-                     $FilasZona = VendedoresModelo::Borrar_Vendedores_Modelo($Id);
+                     $FilasVendedor = VendedoresModelo::Borrar_Vendedores_Modelo($Id);
                     
-                        if($FilasZona->rowCount() >= 1){
+                        if($FilasVendedor->rowCount() >= 1){
                          $Alerta = [
                              "Alerta"=>"simple",
                              "Titulo"=>"¡Excelente!",
