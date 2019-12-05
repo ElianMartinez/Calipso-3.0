@@ -37,7 +37,7 @@
         {
             $sql = mainModel::insertar("vendedores",$datos);
             return $sql;
-        } 
+        }  
 
         protected function Modificar_vendedores_Modelo($datos)
         {

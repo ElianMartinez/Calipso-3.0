@@ -128,7 +128,7 @@
 
   <!--   Big container   -->
   <div class="Registrogrupos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 App2">
-    <div class="card">
+    <div  class="card">
       <div class="form-group">
         <div class="row">
           <div style="margin-top:0px;" class="col">
@@ -141,51 +141,59 @@
 
       </div>
       <div class="card-body">
+
+        <form class="FormularioAjaxNuevo" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php"  >
         <div class="row">
           <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12  form-group ">
             <label for="last_name" class="form-label">TIPO DE VENDEDOR</label>
-            <select required="" class="mostrarTipoV form-control" name="tipoVV" id="tipoV">
+            <select required="" class="mostrarTipoV form-control" name="tipoV" id="tipoV" required>
 
             </select>
           </div>
           <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 form-group">
             <label for="last_name" class="form-label">NOMBRE DE VENDEDOR</label>
             <input type="text" name="nombreV" id="nombreV" class="form-control "
-              placeholder="Ingrese el nombre del vendedor">
+              placeholder="Ingrese el nombre del vendedor" required>
           </div>
         </div>
+        <hr style="color: #0056b2;" />
 
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <label for="cedulaV">SEXO</label>
-            <select name="Sexo" class="form-control" id="SexoV">
+            <select name="Sexo" class="form-control" id="SexoV" required>
               <option value="M">MASCULINO</option>
               <option value="F">FEMENINO</option>
-            </select>
+           </select>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
             <label for="estado_c">ESATDO CIVIL</label>
-            <select name="estado_c" class="form-control" id="estado_c">
+            <select name="estado_c" class="form-control" id="estado_c" required>
               <option value="C">CASADO</option>
               <option value="S">SORTERO</option>
             </select>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
             <label for="cedulaV">CÉDULA</label>
-            <input type="text" class="form-control" name="cedulaV" id="cedulaV" placeholder="xxx-xxxxxxx-x">
+            <input type="text" class="form-control"   name="cedulaV" id="cedulaV" pattern="[0-9]{3}[\-]{1}[0-9]{7}[\-]{1}[0-9]{1}" placeholder="xxx-xxxxxxx-x" required>
+            <div class="invalid-feedback">
+              
+              </div>
           </div>
         </div>
 
           <br>
           .
-        <button type="button"  class="btn btn-success">Guardar  <i class="fas fa-plus"></i></button>
-        
+        <button type="submit"  class="btn btn-success">Guardar  <i class="fas fa-plus"></i></button>
+      </form>
 
       </div>
+
+
+      
     </div>
   </div> <!--  big container -->
-
-
+ 
 </div>
 
 
@@ -255,12 +263,31 @@
   });
 
   $(document).ready(function(){
-    $("#cedulaV").mask("999-99999999-9");
+    $("#cedulaV").mask("999-9999999-9"); 
 });
 
 
 
 
 
+
+
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('FormularioAjaxNuevo');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
 
 </script>

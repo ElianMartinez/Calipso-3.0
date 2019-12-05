@@ -131,7 +131,7 @@
                   <th width="8%" scope="col">CODIGO</th>
                   <th scope="col">NOMBRE</th>
                   <th scope="col">NOTA</th>
-                  <th width="8%" scope="col">OPERACIONES</th>
+                  <th width="8%" scope="col">0OPERACIONES</th>
                 </tr>
               </thead>
               <tbody>
