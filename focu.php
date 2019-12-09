@@ -1,6 +1,6 @@
 <?php
 
-public function insertar(Type $var = null)
+ function insertar(Type $var = null)
 {
  
 }

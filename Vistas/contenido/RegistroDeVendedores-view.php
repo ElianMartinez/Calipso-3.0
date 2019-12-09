@@ -2,11 +2,11 @@
 
   <div class="MostrarGrupos App1">
 
-    <div class="col-xl-12 col-lg-10 col-md-10 col-sm-12 col-10 ">
+    <div class="col-xl-12 col-lg-12 col-md-10 col-sm-12 ">
       <br>
       <br>
       <h2 id="Titulo" class="text-center">MAESTRO DE VENDEDORES</h2>
-      <div class="container">
+      <div class="">
         <div class="card">
           <div class="card-header">
 
@@ -128,7 +128,7 @@
 
   <!--   Big container   -->
   <div class="Registrogrupos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 App2">
-    <div  class="card">
+    <div class="card">
       <div class="form-group">
         <div class="row">
           <div style="margin-top:0px;" class="col">
@@ -142,58 +142,181 @@
       </div>
       <div class="card-body">
 
-        <form class="FormularioAjaxNuevo" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php"  >
-        <div class="row">
-          <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12  form-group ">
-            <label for="last_name" class="form-label">TIPO DE VENDEDOR</label>
-            <select required="" class="mostrarTipoV form-control" name="tipoV" id="tipoV" required>
+        <form class="FormularioAjaxNuevo" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  form-group ">
+              <label for="last_name" class="form-label">TIPO DE VENDEDOR <b style="color:red">*</b></label>
+              <select required="" class="mostrarTipoV form-control" name="tipoV" id="tipoV" required>
 
-            </select>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="last_name" class="form-label">NOMBRE DE VENDEDOR <b style="color:red">*</b></label>
+              <input type="text" name="nombreV" id="nombreV" class="form-control "
+                placeholder="Ingrese el nombre del vendedor" required>
+            </div>
           </div>
-          <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 form-group">
-            <label for="last_name" class="form-label">NOMBRE DE VENDEDOR</label>
-            <input type="text" name="nombreV" id="nombreV" class="form-control "
-              placeholder="Ingrese el nombre del vendedor" required>
-          </div>
-        </div>
-        <hr style="color: #0056b2;" />
+          <br>
+          <h3 style="color: #5969FF;">Información personal </h3>
+          <hr style="color: #0056b2;" />
 
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <label for="cedulaV">SEXO</label>
-            <select name="Sexo" class="form-control" id="SexoV" required>
-              <option value="M">MASCULINO</option>
-              <option value="F">FEMENINO</option>
-           </select>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <label for="estado_c">ESATDO CIVIL</label>
-            <select name="estado_c" class="form-control" id="estado_c" required>
-              <option value="C">CASADO</option>
-              <option value="S">SORTERO</option>
-            </select>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
-            <label for="cedulaV">CÉDULA</label>
-            <input type="text" class="form-control"   name="cedulaV" id="cedulaV" pattern="[0-9]{3}[\-]{1}[0-9]{7}[\-]{1}[0-9]{1}" placeholder="xxx-xxxxxxx-x" required>
-            <div class="invalid-feedback">
-              
+          <div class="row ">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+              <label for="cedulaV">SEXO <b style="color:red">*</b></label>
+              <select name="Sexo" class="form-control" id="SexoV" required>
+                <option value="M">MASCULINO</option>
+                <option value="F">FEMENINO</option>
+              </select>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">TELÉFONO </label>
+              <input type="text" class="form-control" name="telefono" id="telefono"
+                pattern="[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}" placeholder="000-000-0000">
+              <div class="invalid-feedback">
+
               </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CELULAR <b style="color:red">*</b></label>
+              <input type="text" class="form-control" name="celular" id="celular"
+                pattern="[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}" placeholder="000-000-0000" required>
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+              <label for="estado_c">ESATDO CIVIL <b style="color:red">*</b></label>
+              <select name="estado_c" class="form-control" id="estado_c" required>
+                <option value="C">CASADO</option>
+                <option value="S">SORTERO</option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CÉDULA <b style="color:red">*</b></label>
+              <input type="text" class="form-control" name="cedulaV" id="cedulaV"
+                pattern="[0-9]{3}[\-]{1}[0-9]{7}[\-]{1}[0-9]{1}" placeholder="xxx-xxxxxxx-x" required>
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">FECHA DE NACIMINETO <b style="color:red">*</b></label>
+              <input type="date" class="form-control" name="fecnac" id="fecnac" placeholder="xxx-xxxxxxx-x" required>
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 form-group">
+              <label for="direccion1"> DIERECCIÓN <b style="color:rgba(255, 0, 0, 0.897)">*</b></label>
+              <textarea type="textarea" class="form-control" name="direccion1" id="direccion1"
+                placeholder="Ingrese la dirección aquí, información como sector, calle, apartamento o número de casa."></textarea>
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
           </div>
-        </div>
 
           <br>
-          .
-        <button type="submit"  class="btn btn-success">Guardar  <i class="fas fa-plus"></i></button>
-      </form>
+          <h3 style="color: #5969FF;">Información de ventas y comiciones</h3>
+
+          <hr style="color: #0056b2;" />
+
+          <div class="row">
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
+                  <label for="cedulaV">Ventas mínimas mensuales  </label>
+                  <input type=" number" class="form-control" name="vmm" id="vmm" placeholder="RD$0.00" >
+                  <div class="invalid-feedback">
+    
+                  </div>
+                </div>
+
+          </div>
+          <br>
+
+       <center>  <h3 for="">Ventas al contado</h3></center>
+          <div class="row d-flex justify-content-center">
+            
+          
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">PRECIO 1 </label>
+              <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+                <label for="cedulaV">PRECIO 2 </label>
+                <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                <div class="invalid-feedback">
+  
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+                  <label for="cedulaV">PRECIO 3 </label>
+                  <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                  <div class="invalid-feedback">
+    
+                  </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+                    <label for="cedulaV">PRECIO 4 </label>
+                    <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                    <div class="invalid-feedback">
+      
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+                
+                      <label for="cedulaV"> Venta mínima PRECIO 4 </label>
+                      <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                      <div class="invalid-feedback">
+        
+                      </div>
+                    </div>
+
+          </div>
+
+          <hr>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
+            <label for="cedulaV">PRECIO 6 </label>
+            <input type=" number" class="form-control" name="precio1" id="precio" disabled placeholder="0.00%" >
+            <div class="invalid-feedback">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">PRECIO 7 </label>
+              <input type="number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+
+          <br>
+
+          <button type="submit" class="btn btn-success">Guardar <i class="fas fa-plus"></i></button>
+        </form>
 
       </div>
 
 
-      
+
     </div>
   </div> <!--  big container -->
- 
+
 </div>
 
 
@@ -233,7 +356,7 @@
   });
 
   $(document).ready(function () {
-   
+
     MostrarDatos('<?php echo SERVERURL;?>Ajax/VendedoresAjax.php');
     let id = "sdsa";
     $.ajax({
@@ -262,9 +385,13 @@
 
   });
 
-  $(document).ready(function(){
-    $("#cedulaV").mask("999-9999999-9"); 
-});
+  $(document).ready(function () {
+    $("#cedulaV").mask("999-9999999-9");
+    $("#celular").mask("999-999-9999");
+    $("#telefono").mask("999-999-9999");
+
+
+  });
 
 
 
@@ -272,22 +399,22 @@
 
 
 
-(function() {
-'use strict';
-window.addEventListener('load', function() {
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-var forms = document.getElementsByClassName('FormularioAjaxNuevo');
-// Loop over them and prevent submission
-var validation = Array.prototype.filter.call(forms, function(form) {
-form.addEventListener('submit', function(event) {
-if (form.checkValidity() === false) {
-event.preventDefault();
-event.stopPropagation();
-}
-form.classList.add('was-validated');
-}, false);
-});
-}, false);
-})();
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('FormularioAjaxNuevo');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 
 </script>

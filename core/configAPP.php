@@ -1,6 +1,6 @@
 <?php 
 
-const SERVER ="127.0.0.1";
+const SERVER ="localhost";
 const DB = "bdinventario";
 const USER = "root";
 const PASS = "";
