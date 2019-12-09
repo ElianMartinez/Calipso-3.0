@@ -132,7 +132,7 @@ if ($peticionAjax == true) {
 
                 public function ModificarVendedores($datos){
            
-                  $FilasZona = TipoVModelo::Modificar_Vendedores_Modelo($datos);
+                  $FilasZona = VendedoresModelo::Modificar_Vendedores_Modelo($datos);
                   $url = SERVERURL."Ajax/VendedoresAjax.php";
                      if($FilasZona->rowCount() >= 1){
                       $Alerta = [

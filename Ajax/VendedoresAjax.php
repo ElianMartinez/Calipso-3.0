@@ -31,7 +31,7 @@ if(isset($_POST['MostrarDatos'])){
  if(isset($_POST['BuscarDatos'])){
   require_once "../Controladores/VendedoresControlador.php";
   $logout = new VendedoresControlador();
-  $result = $logout->BuscarZona($_POST['BuscarDatos']);
+  $result = $logout->BuscarVendedores($_POST['BuscarDatos'],$_POST['Sexo'],$_POST['de']);
  echo $result;  
 }
 
@@ -50,6 +50,6 @@ if(isset($_POST['nombre1']) && $_POST['ID'] != "" ){
   require_once "../Controladores/VendedoresControlador.php";
   $logout = new VendedoresControlador();
   $datos = array($_POST['ID'],$_POST['nombre'],$_POST["nota"]);
-  $result = $logout->ModificarZonas($datos);
+  $result = $logout->ModificarVendedores($datos);
   echo $result;
 }

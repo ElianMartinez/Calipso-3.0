@@ -142,7 +142,7 @@
       </div>
       <div class="card-body">
 
-        <form class="FormularioAjaxNuevo" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php">
+        <form class="FormularioAjaxNuevo" autocomplete="off" data-form="save" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  form-group ">
               <label for="last_name" class="form-label">TIPO DE VENDEDOR <b style="color:red">*</b></label>
@@ -211,7 +211,7 @@
               </div>
             </div>
 
-            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 form-group">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
               <label for="direccion1"> DIERECCIÓN <b style="color:rgba(255, 0, 0, 0.897)">*</b></label>
               <textarea type="textarea" class="form-control" name="direccion1" id="direccion1"
                 placeholder="Ingrese la dirección aquí, información como sector, calle, apartamento o número de casa."></textarea>
@@ -226,88 +226,199 @@
 
           <hr style="color: #0056b2;" />
 
-          <div class="row">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="vmm"> <b>Ventas mínimas mensuales</b> </label>
 
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
-                  <label for="cedulaV">Ventas mínimas mensuales  </label>
-                  <input type=" number" class="form-control" name="vmm" id="vmm" placeholder="RD$0.00" >
-                  <div class="invalid-feedback">
-    
-                  </div>
-                </div>
+              <input type="number" class="form-control" name="vmm" id="vmm" placeholder="RD$0.00">
 
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
           </div>
+
+
           <br>
 
-       <center>  <h3 for="">Ventas al contado</h3></center>
+          <center>
+            <h3 for="">Ventas al contado</h3>
+          </center>
           <div class="row d-flex justify-content-center">
-            
-          
+
+
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">PRECIO 1 </label>
-              <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+              <input type="number" class="form-control" name="precio1" id="precio1" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
             </div>
 
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
-                <label for="cedulaV">PRECIO 2 </label>
-                <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+              <label for="cedulaV">PRECIO 2 </label>
+              <input type="number" class="form-control" name="precio2" id="precio2" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">PRECIO 3 </label>
+              <input type="number" class="form-control" name="precio3" id="precio3" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">PRECIO 4 </label>
+              <input type="number" class="form-control" name="precio4" id="precio4" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+
+              <label for="cedulaV">  Menor PRECIO 4 </label>
+              <input type="number" class="form-control" name="precio44" id="precio44" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <hr>
+          <br>
+
+          <center>
+            <h3 for="">Crédito (Precio) </h3>
+          </center>
+          <div class="row d-flex justify-content-center">
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CRÉDITO 1 </label>
+              <input type="number" class="form-control" name="credito1" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CRÉDITO 2 </label>
+              <input type="number" class="form-control" name="credito2" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CRÉDITO 3 </label>
+              <input type="number" class="form-control" name="credito3" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">CRÉDITO 4 </label>
+              <input type="number" class="form-control" name="credito4" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
+
+              <label for="cedulaV">  Menor CRÉDITO 4 </label>
+              <input type="number" class="form-control" name="credito44" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+    
+          </div>
+          <br>
+<hr>
+          <br>
+          <center>
+            <h3 for="">Cobros (Comisión)</h3>
+          </center>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+              <label for="cedulaV">Cobros de 0 Día </label>
+              <input type="number" class="form-control" name="cobros1" placeholder="0.00%">
+              <div class="invalid-feedback">
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                <label for="cedulaV">Cobros de 1-30 Días </label>
+                <input type="number" class="form-control" name="cobros2" placeholder="0.00%">
                 <div class="invalid-feedback">
   
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
-                  <label for="cedulaV">PRECIO 3 </label>
-                  <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                  <label for="cedulaV">Cobros de 31-60 Días </label>
+                  <input type="number" class="form-control" name="cobros3" placeholder="0.00%">
                   <div class="invalid-feedback">
     
                   </div>
                 </div>
 
-
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
-                    <label for="cedulaV">PRECIO 4 </label>
-                    <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                    <label for="cedulaV">Cobros de 61-90 Días </label>
+                    <input type="number" class="form-control" name="cobros4" placeholder="0.00%">
                     <div class="invalid-feedback">
       
                     </div>
                   </div>
 
-                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
-                
-                      <label for="cedulaV"> Venta mínima PRECIO 4 </label>
-                      <input type=" number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                      <label for="cedulaV">Cobros de 91-120 Días </label>
+                      <input type="number" class="form-control" name="cobros5" placeholder="0.00%">
                       <div class="invalid-feedback">
         
                       </div>
                     </div>
 
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
+                        <label for="cedulaV">Cobros de 121-Más Día </label>
+                        <input type="number" class="form-control" name="cobros6" placeholder="0.00%">
+                        <div class="invalid-feedback">
+          
+                        </div>
+                      </div>
+           
+
+            
+    
+  
+
           </div>
-
-          <hr>
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
-            <label for="cedulaV">PRECIO 6 </label>
-            <input type=" number" class="form-control" name="precio1" id="precio" disabled placeholder="0.00%" >
-            <div class="invalid-feedback">
-
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-group">
-              <label for="cedulaV">PRECIO 7 </label>
-              <input type="number" class="form-control" name="precio1" id="precio" placeholder="0.00%" >
-              <div class="invalid-feedback">
-
-              </div>
-            </div>
-
-
           <br>
 
-          <button type="submit" class="btn btn-success">Guardar <i class="fas fa-plus"></i></button>
+          <br>
+          <div class="d-flex justify-content-center">
+
+            <button type="submit" class="btn btn-success">Guardar <i class="fas fa-plus"></i></button>
+
+          </div>
+          <br>
+
+
         </form>
 
       </div>
