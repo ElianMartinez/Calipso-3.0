@@ -36,7 +36,7 @@ $(document).ready(function(){
             console.log(tipo +"    "+ accion+"    " + metodo);
            
             var formdata = new FormData(this);
-                  
+          
                  
     
             var textoAlerta;
@@ -81,6 +81,7 @@ $(document).ready(function(){
                         return xhr;
                     },
                     success: function (data) {
+                       
                         respuesta.html(data);
                         
                        
@@ -100,6 +101,7 @@ $(document).ready(function(){
      
 
         function accc(){
+            
           $('.bttool').tooltip();
       
           }
@@ -176,10 +178,24 @@ $(document).ready(function(){
         $(".modificar").show();
         $(".registrar").hide();
          for(i = 0; i < campos.length; i++){
-            $(campos[i]).val(datos[i]);
+           
+            if(!$(campos[i]).is("select")) {
+              // the input field is not a select
+              $(campos[i]).val(datos[i]);
+            }else{
+                $(campos[i]+"option[value='"+datos[i]+"']").attr("selected","selected");
+            }
+        
+           
+          
           }
 
      }
+
+
+     
+    
+
 
      function imprimir(stylesheet,valor,empresa){
         var pageTitle = 'Impuestos',

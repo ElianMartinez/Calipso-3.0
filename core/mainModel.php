@@ -175,7 +175,7 @@
             type: '".$datos['Tipo']."',
             confirmButtonText: 'Aceptar'
           }).then(function () {
-              $('.FormularioAjax')[0].reset();
+              $('#FormularioAjaxNuevo').trigger('reset');
               OcurtarApp2();
               MostrarDatos('".$datos['url']."');
           });
@@ -191,6 +191,7 @@
             confirmButtonText: 'Aceptar'
           }).then(function () {
               $('.FormularioAjax1')[0].reset();
+              
           });
         </script> ";
      }

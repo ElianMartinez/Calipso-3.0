@@ -23,7 +23,7 @@
     <script src="<?php echo SERVERURL; ?>Vistas/js/sweetalert2.min.js"></script>
     <script src="<?php echo SERVERURL; ?>Vistas/assets/datatables.min.js"></script>
 
-    <script src="<?php echo SERVERURL; ?>assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+   
 
 <!--  Plugin for the Wizard -->
 

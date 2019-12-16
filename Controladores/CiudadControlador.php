@@ -111,6 +111,45 @@ if ($peticionAjax == true) {
                           
                                 
                          }
+
+
+
+                         function mostrarCD(){
+                           $Filasbanco = CiudadModelo::Mostrar_Ciudad_Modelo();
+                           
+                        foreach($Filasbanco as $row){
+                                 $datos .= '<option value="'.$row["COD_CD_F"].'">'.$row["NOMBRE"].'</option>';
+                              }
+                              return $datos;
+                         }
+
+
+                         public function BorrarCiudad($Id){
+           
+                           $FilasCiudad = CiudadModelo::Borrar_Ciudad_Modelo($Id);
+                              
+                              if($FilasCiudad->rowCount() >= 1){ 
+                               $Alerta = [
+                                   "Alerta"=>"simple",
+                                   "Titulo"=>"¡Excelente!",
+                                   "Texto"=>"La Ciudad se borro correctamente",
+                                   "Tipo"=> "success"
+                                ];
+                              }else{
+                               $Alerta = [
+                                   "Alerta"=>"simple",
+                                   "Titulo"=>"Error!",
+                                   "Texto"=>"La Ciudad no se borro correctamente",
+                                   "Tipo"=> "error"
+                                ];
+                              }
+                            
+                                  
+                              return mainModel::sweet_alert($Alerta);
+                                   
+                            }
+            
+                          
          
 
 

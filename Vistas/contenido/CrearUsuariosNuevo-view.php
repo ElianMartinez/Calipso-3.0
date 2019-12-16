@@ -258,7 +258,7 @@ section .section-title {
                 </div>
               </div>
               <div class="form-group">
-                  <input style="" type="number" class="form-control" id="ID" name="ID" >
+                  <input  type="number" class="form-control" id="ID" name="ID" >
                 <label for="facturacion">Facturación</label>
                 <div class="input-group mb-3"><span class="input-group-prepend"><span class="input-group-text"><i
                         class="fas fa-dollar-sign"></i></span></span>

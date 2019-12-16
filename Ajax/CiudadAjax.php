@@ -9,6 +9,13 @@ if(isset($_POST['MostrarDatos'])){
    echo $result;
     
  }
+
+ if(isset($_POST['Select'])){
+  require_once "../Controladores/CiudadControlador.php";
+  $logout = new CiudadControlador();
+  $result = $logout->mostrarCD();
+ echo $result;
+}
  
  if(isset($_POST['BorrarDatos'])){
   require_once "../Controladores/CiudadControlador.php";
@@ -18,12 +25,7 @@ if(isset($_POST['MostrarDatos'])){
 }
 
 
-if(isset($_POST['BuscarDatos'])){
-  require_once "../Controladores/CiudadControlador.php";
-  $logout = new CiudadControlador();
-  $result = $logout->BuscarCiudad($_POST['BuscarDatos']);
-  echo $result;
-}
+
 
 if(isset($_POST['nombre']) && $_POST['ID'] == "" ){
   require_once "../Controladores/CiudadControlador.php";

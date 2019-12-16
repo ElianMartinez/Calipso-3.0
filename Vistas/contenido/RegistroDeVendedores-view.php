@@ -74,7 +74,7 @@
       <div class="card">
         <div class="card-header">
           <form class="form-inline">
-            <h4 style="margin-top:12px">NOMBRE DE LAS VENDEDORES</h4>
+            <h4 style="margin-top:12px">NOMBRE DE LOS VENDEDORES</h4>
 
             <button type="button" id="agregargrupo" class="btn btn-primary" style="color:white; margin-left:30px "><i
                 class="fas fa-plus-circle"></i> Agregar</button>
@@ -142,7 +142,7 @@
       </div>
       <div class="card-body">
 
-        <form class="FormularioAjaxNuevo" autocomplete="off" data-form="save" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php">
+        <form class="FormularioAjaxNuevo"  id="FormularioAjaxNuevo"  autocomplete="off" data-form="save" method="POST" action="<?php echo SERVERURL;?>Ajax/VendedoresAjax.php">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  form-group ">
               <label for="last_name" class="form-label">TIPO DE VENDEDOR <b style="color:red">*</b></label>
@@ -152,17 +152,28 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
               <label for="last_name" class="form-label">NOMBRE DE VENDEDOR <b style="color:red">*</b></label>
-              <input type="text" name="nombreV" id="nombreV" class="form-control "
+              <input type="text" name="inputUserName" id="inputUserName" class="form-control "
                 placeholder="Ingrese el nombre del vendedor" required>
             </div>
-          </div>
+        
+
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+            <label for="status">ESTATUS <b style="color:red">*</b></label>
+            <select name="status" class="form-control" id="status" required>
+              <option value="S">Disponible</option>
+              <option value="N">No Disponible</option>
+            </select>
+          </div> 
+        </div>
+         
+
           <br>
           <h3 style="color: #5969FF;">Información personal </h3>
           <hr style="color: #0056b2;" />
 
           <div class="row ">
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
-              <label for="cedulaV">SEXO <b style="color:red">*</b></label>
+              <label for="Sexo">SEXO <b style="color:red">*</b></label>
               <select name="Sexo" class="form-control" id="SexoV" required>
                 <option value="M">MASCULINO</option>
                 <option value="F">FEMENINO</option>
@@ -170,7 +181,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
-              <label for="cedulaV">TELÉFONO </label>
+              <label for="telefono">TELÉFONO </label>
               <input type="text" class="form-control" name="telefono" id="telefono"
                 pattern="[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}" placeholder="000-000-0000">
               <div class="invalid-feedback">
@@ -179,7 +190,7 @@
             </div>
 
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 form-group">
-              <label for="cedulaV">CELULAR <b style="color:red">*</b></label>
+              <label for="celular">CELULAR <b style="color:red">*</b></label>
               <input type="text" class="form-control" name="celular" id="celular"
                 pattern="[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}" placeholder="000-000-0000" required>
               <div class="invalid-feedback">
@@ -211,7 +222,16 @@
               </div>
             </div>
 
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+            <input type="number" name="ID" id="ID" style="display:none;">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  form-group ">
+              <label for="last_name" class="form-label">Ciudad <b style="color:red">*</b></label>
+              <select required="" class="mostrarCD form-control" name="ciudad" id="ciudad" required>
+
+              </select>
+            </div>
+
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 form-group">
               <label for="direccion1"> DIERECCIÓN <b style="color:rgba(255, 0, 0, 0.897)">*</b></label>
               <textarea type="textarea" class="form-control" name="direccion1" id="direccion1"
                 placeholder="Ingrese la dirección aquí, información como sector, calle, apartamento o número de casa."></textarea>
@@ -303,7 +323,7 @@
 
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">CRÉDITO 1 </label>
-              <input type="number" class="form-control" name="credito1" placeholder="0.00%">
+              <input type="number" class="form-control" name="credito1" id="credito1" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -311,7 +331,7 @@
 
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">CRÉDITO 2 </label>
-              <input type="number" class="form-control" name="credito2" placeholder="0.00%">
+              <input type="number" class="form-control" name="credito2" id="credito2" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -319,7 +339,7 @@
 
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">CRÉDITO 3 </label>
-              <input type="number" class="form-control" name="credito3" placeholder="0.00%">
+              <input type="number" class="form-control" name="credito3" id="credito3" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -328,7 +348,7 @@
 
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">CRÉDITO 4 </label>
-              <input type="number" class="form-control" name="credito4" placeholder="0.00%">
+              <input type="number" class="form-control" name="credito4" id="credito4" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -337,7 +357,7 @@
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 form-group">
 
               <label for="cedulaV">  Menor CRÉDITO 4 </label>
-              <input type="number" class="form-control" name="credito44" placeholder="0.00%">
+              <input type="number" class="form-control" name="credito44" id="credito44" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -356,7 +376,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
               <label for="cedulaV">Cobros de 0 Día </label>
-              <input type="number" class="form-control" name="cobros1" placeholder="0.00%">
+              <input type="number" class="form-control" name="cobros1" id="cobros1" placeholder="0.00%">
               <div class="invalid-feedback">
 
               </div>
@@ -364,7 +384,7 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
                 <label for="cedulaV">Cobros de 1-30 Días </label>
-                <input type="number" class="form-control" name="cobros2" placeholder="0.00%">
+                <input type="number" class="form-control" name="cobros2" id="cobros2" placeholder="0.00%">
                 <div class="invalid-feedback">
   
                 </div>
@@ -372,7 +392,7 @@
 
               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
                   <label for="cedulaV">Cobros de 31-60 Días </label>
-                  <input type="number" class="form-control" name="cobros3" placeholder="0.00%">
+                  <input type="number" class="form-control" name="cobros3" id="cobros3" placeholder="0.00%">
                   <div class="invalid-feedback">
     
                   </div>
@@ -380,7 +400,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
                     <label for="cedulaV">Cobros de 61-90 Días </label>
-                    <input type="number" class="form-control" name="cobros4" placeholder="0.00%">
+                    <input type="number" class="form-control" name="cobros4" id="cobros4" placeholder="0.00%">
                     <div class="invalid-feedback">
       
                     </div>
@@ -388,7 +408,7 @@
 
                   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
                       <label for="cedulaV">Cobros de 91-120 Días </label>
-                      <input type="number" class="form-control" name="cobros5" placeholder="0.00%">
+                      <input type="number" class="form-control" name="cobros5" id="cobros5" placeholder="0.00%">
                       <div class="invalid-feedback">
         
                       </div>
@@ -396,7 +416,7 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group">
                         <label for="cedulaV">Cobros de 121-Más Día </label>
-                        <input type="number" class="form-control" name="cobros6" placeholder="0.00%">
+                        <input type="number" class="form-control" name="cobros6" id="cobros6" placeholder="0.00%">
                         <div class="invalid-feedback">
           
                         </div>
@@ -429,7 +449,7 @@
   </div> <!--  big container -->
 
 </div>
-
+<div class="RespuestaAjax"></div>
 
 <script>
 
@@ -486,11 +506,35 @@
       .fail(function () {
         console.log('error');
       });
+    });
+
+     
+
+    $(document).ready(function () {
+      let id = "klk";
+//buscar datos de ciudadaes y mostrarla en un select 
+$.ajax({
+
+url: "<?php echo SERVERURL;?>Ajax/CiudadAjax.php",
+type: "POST",
+dataType: 'html',
+data: { Select: id },
+})
+.done(function (respuesta) {
+
+  $(".mostrarCD").html(respuesta);
+
+})
+
+.fail(function () {
+  console.log('error');
+});
+
 
   });
 
   $("#back").click(function () {
-
+    $("#FormularioAjaxNuevo")[0].reset();
     OcurtarApp2();
     $(".FormularioAjax")[0].reset();
 
@@ -510,22 +554,6 @@
 
 
 
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('FormularioAjaxNuevo');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+ 
 
 </script>
