@@ -1,25 +1,4 @@
-<?php 
 
-session_start();
-if ($_SESSION['token']) {
-	
-	header("Location:".SERVERURL."Home");
-}else{
-
-$peticionAjax = false;
-if (isset($_POST['user']) && isset($_POST['pass'])) {
-	require_once "./Controladores/loginControlador.php";
-	$login = new loginControlador();
-	$login->iniciar_sesion_controlador();
-
-}
-
- else {
-	
-}
-}	
-
-?>
  <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -59,13 +38,13 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 				<p>Inverisap SRL</p>
 				</div>
                  
-				<form method="POST" action=""   class="login100-form validate-form">
+				<form id="formLogin"  class="login100-form validate-form">
 					<span class="login100-form-title">
 				Bienvenidos
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Introduzca tu Usuario!">
-						<input class="input100" id="user" type="text" name="user" placeholder="Username">
+						<input class="input100" id="userlogin" type="text" name="userlogin" placeholder="Username" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user" aria-hidden="true"></i>
@@ -73,7 +52,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Introduzca tu Contraseña!">
-						<input class="input100" id="pass" type="password" name="pass" placeholder="Password">
+						<input class="input100" id="passlogin" type="password" name="passlogin" required placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -107,6 +86,13 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 			</div>
 		</div>
 	</div>
+
+
+	<div class="respuestafecth">
+
+	</div>
+	
+
 	<script src="<?php echo SERVERURL; ?>Vistas/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="<?php echo SERVERURL; ?>Vistas/js/jquery-3.1.1.min.js"></script>
 	<script src="<?php echo SERVERURL; ?>Vistas/js/sweetalert2.min.js"></script>
@@ -131,6 +117,24 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 
 	<script type="text/javascript">
 		$('.pre-loader').hide();
+		
+		$("#formLogin").submit(function(event){
+			event.preventDefault();
+			 fetch("<?php echo SERVERURL; ?>Ajax/loginAjax.php" , {
+ 			 method: 'post',
+             body: new FormData(document.getElementById('formLogin'))
+}).then(respuesta => respuesta.text())
+
+.then(function(dato) {
+  $('.respuestafecth').html(dato);
+}).catch(function(err) {
+  // Error :(
+});
+
+});
+
+		
+	
 	</script>
 
 </body>

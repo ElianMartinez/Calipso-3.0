@@ -12,8 +12,8 @@ if ($peticionAjax == true) {
 
         public function iniciar_sesion_controlador()
         {            
-            $usuario = mainModel::limpiar_cadena($_POST["user"]); 
-            $pass = mainModel::limpiar_cadena($_POST["pass"]); 
+            $usuario = mainModel::limpiar_cadena($_POST["userlogin"]); 
+            $pass = mainModel::limpiar_cadena($_POST["passlogin"]); 
 
             $datos = [
                "usuario" =>$usuario,
@@ -46,11 +46,11 @@ if ($peticionAjax == true) {
               
                $Alerta=[
                     "Alerta"=>"simple",
-                    "Titulo"=>"Ocurrio un Error inesperado",
-                  "Texto"=>"El usuario o la Contraseña no son validos porfavor intente nuevamente",
-              "Tipo"=>"error"
+                    "Titulo"=>"Usuario o contraseña desconocido",
+                    "Texto"=>"El usuario o la Contraseña no son validos porfavor intente nuevamente",
+                    "Tipo"=>"warning"
                ];
-                echo mainModel::sweet_alert($Alerta);
+              
                return mainModel::sweet_alert($Alerta);
              }
             }
