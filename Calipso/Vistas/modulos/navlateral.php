@@ -39,13 +39,13 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-1-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                 <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE INVENTARIO"); ?> class="nav-link" href="/RegistroDeInventario/"></i> Registro de Inventario</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE INVENTARIO"); ?> class="nav-link" href="/Calipso/RegistroDeInventario/"></i> Registro de Inventario</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE ARTICULOS / SUB TIPOS"); ?> class="nav-link" href="/TiposDeArticulosSubtipos/">Tipos de Articulos /Sub-Tipos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE ARTICULOS / SUB TIPOS"); ?> class="nav-link" href="/Calipso/TiposDeArticulosSubtipos/">Tipos de Articulos /Sub-Tipos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ALMACEN"); ?> class="nav-link" href="/Almacenes/">Almacenes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ALMACEN"); ?> class="nav-link" href="/Calipso/Almacenes/">Almacenes</a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a <?php echo $login->Inicio_Permisos($role,"MARCAS"); ?> class="nav-link" href="Marcas/">Marcas</a>
@@ -59,10 +59,10 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-2-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                 <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE CLIENTES"); ?> class="nav-link" href="/RegistroDeClientes/">Registro de Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE CLIENTES"); ?> class="nav-link" href="/Calipso/RegistroDeClientes/">Registro de Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE CLIENTES"); ?> class="nav-link" href="/TiposDeClientes/">Tipos de Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE CLIENTES"); ?> class="nav-link" href="/Calipso/TiposDeClientes/">Tipos de Clientes</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -72,10 +72,10 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-3-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE VENDEDORES"); ?>  class="nav-link" href="/RegistroDeVendedores/">Registro de Vendedores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE VENDEDORES"); ?>  class="nav-link" href="/Calipso/RegistroDeVendedores/">Registro de Vendedores</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE VENDEDORES"); ?> class="nav-link" href="/TiposDeVendedores/">Tipos de Vendedores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE VENDEDORES"); ?> class="nav-link" href="/Calipso/TiposDeVendedores/">Tipos de Vendedores</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -85,31 +85,31 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-3-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE SUPLIDORES"); ?> class="nav-link" href="/RegistroDeSuplidores/">Registro de Suplidores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"REGISTRO DE SUPLIDORES"); ?> class="nav-link" href="/Calipso/RegistroDeSuplidores/">Registro de Suplidores</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE SUPLIDORES"); ?>  class="nav-link" href="/TiposDeSuplidores/">Tipos de Suplidores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS DE SUPLIDORES"); ?>  class="nav-link" href="/Calipso/TiposDeSuplidores/">Tipos de Suplidores</a>
                                                     </li>
                                                 </ul>
                                             </div>
 
                                             <li class="nav-item">
-                                           <a <?php echo $login->Inicio_Permisos($role,"CONTABILIDAD"); ?> class="nav-link" href="/Contabilidad/"><i class="fas fa-id-card"></i>Contabilidad</a>
+                                           <a <?php echo $login->Inicio_Permisos($role,"CONTABILIDAD"); ?> class="nav-link" href="/Calipso/Contabilidad/"><i class="fas fa-id-card"></i>Contabilidad</a>
                                         </li>
                                         <a  <?php echo $login->Inicio_Permisos($role,"OTROS_M"); ?> class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9-2" aria-controls="submenu-9-2"><i class="fas fa-calendar-plus"></i>Otros</a>
                                             <div id="submenu-9-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BANCOS"); ?> class="nav-link" href="/BANCOS/">Bancos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BANCOS"); ?> class="nav-link" href="/Calipso/BANCOS/">Bancos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ZONAS"); ?>  class="nav-link" href="/ZONAS/">Zonas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ZONAS"); ?>  class="nav-link" href="/Calipso/ZONAS/">Zonas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CUIDADES"); ?>  class="nav-link" href="/CUIDADES/">Cuidades</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CUIDADES"); ?>  class="nav-link" href="/Calipso/CUIDADES/">Cuidades</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"IMPUESTOS"); ?>  class="nav-link" href="/IMPUESTOS/">Impuestos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"IMPUESTOS"); ?>  class="nav-link" href="/Calipso/IMPUESTOS/">Impuestos</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -128,26 +128,26 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-4-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS CONTADO"); ?> class="nav-link" href="/VentasContados/">Ventas Contado</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS CONTADO"); ?> class="nav-link" href="/Calipso/VentasContados/">Ventas Contado</a>
                                                     </li>
 
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS CREDITO"); ?> class="nav-link" href="/VentasCreditos/">Ventas Creditos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS CREDITO"); ?> class="nav-link" href="/Calipso/VentasCreditos/">Ventas Creditos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CUADRE DE CAJA"); ?> class="nav-link" href="/CuadreDeCaja/">Cuadre de caja</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CUADRE DE CAJA"); ?> class="nav-link" href="/Calipso/CuadreDeCaja/">Cuadre de caja</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a  <?php echo $login->Inicio_Permisos($role,"COTIZACIONES"); ?> class="nav-link" href="/Cotizaciones/">Cotizaciones</a>
+                                                        <a  <?php echo $login->Inicio_Permisos($role,"COTIZACIONES"); ?> class="nav-link" href="/Calipso/Cotizaciones/">Cotizaciones</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS AL CONTADO"); ?> class="nav-link" href="/PreventasAlContado/">Preventas al Contado</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS AL CONTADO"); ?> class="nav-link" href="/Calipso/PreventasAlContado/">Preventas al Contado</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS A CREDITO"); ?> class="nav-link" href="/PreventasACrédito/">Preventas a Crédito</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS A CREDITO"); ?> class="nav-link" href="/Calipso/PreventasACrédito/">Preventas a Crédito</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ORDEN DE PEDIDO"); ?>  class="nav-link" href="/OrdenDePedido/">Orden de Pedido </a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ORDEN DE PEDIDO"); ?>  class="nav-link" href="/Calipso/OrdenDePedido/">Orden de Pedido </a>
                                                     </li>
                                                 </ul>
 
@@ -165,24 +165,24 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-4-3" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS NORMALES"); ?> class="nav-link" href="/RecibosNormales/">Recibos Normales</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS NORMALES"); ?> class="nav-link" href="/Calipso/RecibosNormales/">Recibos Normales</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PAGOS CON TARJETA"); ?> class="nav-link" href="/PagosConTarjeta/">Pagos con Tarjeta</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PAGOS CON TARJETA"); ?> class="nav-link" href="/Calipso/PagosConTarjeta/">Pagos con Tarjeta</a>
                                                                <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE AVANCES"); ?> class="nav-link" href="/RecibosDeAvances/">Recibos de Avances</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE AVANCES"); ?> class="nav-link" href="/Calipso/RecibosDeAvances/">Recibos de Avances</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"INGRESO POR TARJETA"); ?> class="nav-link" href="/IngresoXTarjeta/">Ingreso x Tarjeta</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"INGRESO POR TARJETA"); ?> class="nav-link" href="/Calipso/IngresoXTarjeta/">Ingreso x Tarjeta</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS AL CONTADO"); ?> class="nav-link" href="/PreventasAlContado1/">Preventas al Contado</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PREVENTAS AL CONTADO"); ?> class="nav-link" href="/Calipso/PreventasAlContado1/">Preventas al Contado</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"OTROS INGRESOS"); ?> class="nav-link" href="/OtrosIngresos/">Otros Ingresos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"OTROS INGRESOS"); ?> class="nav-link" href="/Calipso/OtrosIngresos/">Otros Ingresos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"REIMPRIMIR RECIBO"); ?> class="nav-link" href="/ReimprimirRecibo/">Reimprimir Recibo</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"REIMPRIMIR RECIBO"); ?> class="nav-link" href="/Calipso/ReimprimirRecibo/">Reimprimir Recibo</a>
                                                     </li>
                                                 </ul>
                                                 
@@ -190,18 +190,18 @@ $role =  $_SESSION["role"];
                                         </li>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a  <?php echo $login->Inicio_Permisos($role,"NOTA DE DEBITO"); ?> class="nav-link" href="/NotaDeDebito/"><i class="fas fa-id-card"></i>Nota de Debito</a>
+                                                        <a  <?php echo $login->Inicio_Permisos($role,"NOTA DE DEBITO"); ?> class="nav-link" href="/Calipso/NotaDeDebito/"><i class="fas fa-id-card"></i>Nota de Debito</a>
                                                                <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE CREDITO"); ?> class="nav-link" href="/NotaDeCredito/"><i class="fas fa-sticky-note"></i>Nota de Credito</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE CREDITO"); ?> class="nav-link" href="/Calipso/NotaDeCredito/"><i class="fas fa-sticky-note"></i>Nota de Credito</a>
                                                     </li>
                                                      <a <?php echo $login->Inicio_Permisos($role,"OTROS"); ?> class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4-4" aria-controls="submenu-4-4"><i class="fas fa-calendar-plus"></i>Otros</a>
                                             <div id="submenu-4-4" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/CreditosXAplicar/">Creditos x Aplicar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/Calipso/CreditosXAplicar/">Creditos x Aplicar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"AVANCES PENDIENTES"); ?> class="nav-link" href="/AvancesPendientes/">Avances Pendientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"AVANCES PENDIENTES"); ?> class="nav-link" href="/Calipso/AvancesPendientes/">Avances Pendientes</a>
                                                 </ul>
                                                 
                                             </div>
@@ -210,27 +210,27 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-4-5" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTAS DE DEBITO"); ?> class="nav-link" href="/NotasDeDebito/">Notas de Debito </a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTAS DE DEBITO"); ?> class="nav-link" href="/Calipso/NotasDeDebito/">Notas de Debito </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTAS DE CREDITO"); ?> class="nav-link" href="/NotasDeCredito/">Notas de Creditos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTAS DE CREDITO"); ?> class="nav-link" href="/Calipso/NotasDeCredito/">Notas de Creditos</a>
                                                     </li>
                                                 </ul>
                                                 
                                             </div>
                                         </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE DEBITO SIN NCF"); ?> class="nav-link" href="/NotaDeDebitoSinNCF/"><i class="fas fa-sticky-note"></i>Nota de Debito sin NCF</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE DEBITO SIN NCF"); ?> class="nav-link" href="/Calipso/NotaDeDebitoSinNCF/"><i class="fas fa-sticky-note"></i>Nota de Debito sin NCF</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE CREDITO SIN NCF"); ?> class="nav-link" href="/NotaDeCreditoSinNCF/"><i class="fas fa-sticky-note"></i>Nota de Credito sin NCF</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NOTA DE CREDITO SIN NCF"); ?> class="nav-link" href="/Calipso/NotaDeCreditoSinNCF/"><i class="fas fa-sticky-note"></i>Nota de Credito sin NCF</a>
                                                     </li>
                                                 </ul>
                                                 
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                       <a <?php echo $login->Inicio_Permisos($role,"COTIZACIONES"); ?> class="nav-link" href="/Cotizaciones1/"><i class="fas fa-book"></i>Cotizaciones</a>
+                                       <a <?php echo $login->Inicio_Permisos($role,"COTIZACIONES"); ?> class="nav-link" href="/Calipso/Cotizaciones1/"><i class="fas fa-book"></i>Cotizaciones</a>
                                        </li>
                                     </ul>
                                 </div>
@@ -240,38 +240,38 @@ $role =  $_SESSION["role"];
                                 <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a <?php echo $login->Inicio_Permisos($role,"COTIZACIONES2"); ?> class="nav-link" href="/Cotizaciones2/"><i class="fas fa-book"></i>Cotizaciones</a>
+                                            <a <?php echo $login->Inicio_Permisos($role,"COTIZACIONES2"); ?> class="nav-link" href="/Calipso/Cotizaciones2/"><i class="fas fa-book"></i>Cotizaciones</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a <?php echo $login->Inicio_Permisos($role,"ORDEN DE VENTAS"); ?> class="nav-link" href="/OrdenDeVentas/"><i class="fas fa-money-bill-alt"></i>Orden de Ventas</a>
+                                            <a <?php echo $login->Inicio_Permisos($role,"ORDEN DE VENTAS"); ?> class="nav-link" href="/Calipso/OrdenDeVentas/"><i class="fas fa-money-bill-alt"></i>Orden de Ventas</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5-1" aria-controls="submenu-5-1"><i class="fas fa-id-card-alt"></i>Punto de ventas</a>
                                             <div id="submenu-5-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR CUADRAR"); ?> class="nav-link" href="/VentasPorCuadrar/">Ventas por Cuadrar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR CUADRAR"); ?> class="nav-link" href="/Calipso/VentasPorCuadrar/">Ventas por Cuadrar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS DEL DIA"); ?> class="nav-link" href="/VentasDelDia/"> Ventas del Dia</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS DEL DIA"); ?> class="nav-link" href="/Calipso/VentasDelDia/"> Ventas del Dia</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/FacturasEmitidas/"> Facturas Emitidas </a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/Calipso/FacturasEmitidas/"> Facturas Emitidas </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"DEVOLUCION DE MERCANCIA"); ?> class="nav-link" href="/DevolucionDeMercancia/">Devolucion de Mercancia</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"DEVOLUCION DE MERCANCIA"); ?> class="nav-link" href="/Calipso/DevolucionDeMercancia/">Devolucion de Mercancia</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/CreditosPorAplicar/">Creditos por Aplicar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/Calipso/CreditosPorAplicar/">Creditos por Aplicar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIAS"); ?> class="nav-link" href="/TransaccionesDiarias/">Transacciones Diarias</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIAS"); ?> class="nav-link" href="/Calipso/TransaccionesDiarias/">Transacciones Diarias</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DE PAGO POR CUADRAR"); ?>  class="nav-link" href="/TransaccionesDePagoPorCuadrar/">Transacciones de Pago por Cuadrar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DE PAGO POR CUADRAR"); ?>  class="nav-link" href="/Calipso/TransaccionesDePagoPorCuadrar/">Transacciones de Pago por Cuadrar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES GRALES"); ?> class="nav-link" href="/TransaccionesGrales/">Transacciones Grales </a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES GRALES"); ?> class="nav-link" href="/Calipso/TransaccionesGrales/">Transacciones Grales </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -281,37 +281,37 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"DOCUMENTOS PENDIENTES"); ?> class="nav-link" href="/DocumentosPendientes/">Documentos Pendientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"DOCUMENTOS PENDIENTES"); ?> class="nav-link" href="/Calipso/DocumentosPendientes/">Documentos Pendientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ESTADO DE CUENTAS"); ?>  class="nav-link" href="/EstadoDeCuentas/">Estado de Cuentas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ESTADO DE CUENTAS"); ?>  class="nav-link" href="/Calipso/EstadoDeCuentas/">Estado de Cuentas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"HISTORIAL DEL CLIENTE"); ?>  class="nav-link" href="/HistorialDelCliente/"> Historial del Cliente</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"HISTORIAL DEL CLIENTE"); ?>  class="nav-link" href="/Calipso/HistorialDelCliente/"> Historial del Cliente</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?>  class="nav-link" href="/FacturasEmitidas/">Facturas  Emitidas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?>  class="nav-link" href="/Calipso/FacturasEmitidas/">Facturas  Emitidas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE INGRESOS"); ?> class="nav-link" href="/RecibosDeIngresos/">Recibos de Ingresos</a>
+                                                        <a <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE INGRESOS"); ?> class="nav-link" href="/Calipso/RecibosDeIngresos/">Recibos de Ingresos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <a <?php echo $login->Inicio_Permisos($role,"DEVOLUCION DE MERCANCIAS DIARIAS"); ?> class="nav-link" href="/DevolucionMercanciasDiarias/">Devolucion Mercancias Diarias</a>
+                                                        <a <a <?php echo $login->Inicio_Permisos($role,"DEVOLUCION DE MERCANCIAS DIARIAS"); ?> class="nav-link" href="/Calipso/DevolucionMercanciasDiarias/">Devolucion Mercancias Diarias</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ANULACION DE FACTURAS"); ?> class="nav-link" href="/AnulacionDeFacturas/">Anulacion de Facturas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ANULACION DE FACTURAS"); ?> class="nav-link" href="/Calipso/AnulacionDeFacturas/">Anulacion de Facturas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/CreditosPorAplicar/">Creditos por Aplicar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/Calipso/CreditosPorAplicar/">Creditos por Aplicar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a  <?php echo $login->Inicio_Permisos($role,"AVANCES PENDIENTES"); ?> class="nav-link" href="/AvancesPendientes/">Avances Pendientes</a>
+                                                        <a  <?php echo $login->Inicio_Permisos($role,"AVANCES PENDIENTES"); ?> class="nav-link" href="/Calipso/AvancesPendientes/">Avances Pendientes</a>
                                                         <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CHEQUES DEVUELTOS CXC"); ?> class="nav-link" href="/ChequesDevueltosCXC/">Cheques Devueltos CXC</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CHEQUES DEVUELTOS CXC"); ?> class="nav-link" href="/Calipso/ChequesDevueltosCXC/">Cheques Devueltos CXC</a>
                                                         <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIAS"); ?> class="nav-link" href="/TransaccionesDiarias/">Transacciones Diarias</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIAS"); ?> class="nav-link" href="/Calipso/TransaccionesDiarias/">Transacciones Diarias</a>
                                                         <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BALANCE GENERAL"); ?> class="nav-link" href="/BalanceGeneral/">Balance General</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BALANCE GENERAL"); ?> class="nav-link" href="/Calipso/BalanceGeneral/">Balance General</a>
                                                 </ul>
                                             </div>
                                         <li class="nav-item">
@@ -319,19 +319,19 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-3" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"EXISTENCIA DE ARTICULOS"); ?> class="nav-link" href="/ExistenciadeArticulos/">Existencia de Articulos </a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"EXISTENCIA DE ARTICULOS"); ?> class="nav-link" href="/Calipso/ExistenciadeArticulos/">Existencia de Articulos </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"DETALLES DE CLIENTES"); ?> class="nav-link" href="/DetallesdeClientes/"> Detalles de Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"DETALLES DE CLIENTES"); ?> class="nav-link" href="/Calipso/DetallesdeClientes/"> Detalles de Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS POR CLIENTE"); ?> class="nav-link" href="/ArticulosporCliente/">Articulos por Cliente</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS POR CLIENTE"); ?> class="nav-link" href="/Calipso/ArticulosporCliente/">Articulos por Cliente</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR ARTICULOS"); ?> class="nav-link" href="/VentasporArticulos/">Ventas por Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR ARTICULOS"); ?> class="nav-link" href="/Calipso/VentasporArticulos/">Ventas por Articulos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BENEFICIO DE ARTICULOS"); ?> class="nav-link" href="/BeneficiodeArticulos/">Beneficio de Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BENEFICIO DE ARTICULOS"); ?> class="nav-link" href="/Calipso/BeneficiodeArticulos/">Beneficio de Articulos</a>
                                                     </li>
 
                                                     </ul>
@@ -342,16 +342,16 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-4" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"POR CLIENTES"); ?> class="nav-link" href="/PorClientes/">Por Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"POR CLIENTES"); ?> class="nav-link" href="/Calipso/PorClientes/">Por Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"POR ARTICULOS"); ?> class="nav-link" href="/PorArticulos/">Por Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"POR ARTICULOS"); ?> class="nav-link" href="/Calipso/PorArticulos/">Por Articulos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"POR CIUDAD"); ?> class="nav-link" href="/PorCuidad/">Por Cuidad</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"POR CIUDAD"); ?> class="nav-link" href="/Calipso/PorCuidad/">Por Cuidad</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"GENERAL"); ?> class="nav-link" href="/General/">General</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"GENERAL"); ?> class="nav-link" href="/Calipso/General/">General</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -360,43 +360,43 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-5" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURA EMITIDAS"); ?> class="nav-link" href="/FacturaEmitidas/">Factura Emitidas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURA EMITIDAS"); ?> class="nav-link" href="/Calipso/FacturaEmitidas/">Factura Emitidas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"POR ARTICULOS"); ?> class="nav-link" href="/PorArticulos1/">Por Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"POR ARTICULOS"); ?> class="nav-link" href="/Calipso/PorArticulos1/">Por Articulos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/CreditosporAplicar2/">Creditos por Aplicar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS POR APLICAR"); ?> class="nav-link" href="/Calipso/CreditosporAplicar2/">Creditos por Aplicar</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIA IT1"); ?> class="nav-link" href="/TransaccionesDiariaIT1/">Transacciones Diaria IT1</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIA IT1"); ?> class="nav-link" href="/Calipso/TransaccionesDiariaIT1/">Transacciones Diaria IT1</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIA IT1"); ?>  class="nav-link" href="/OperacionesComprobantes/">Operaciones Comprobantes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIA IT1"); ?>  class="nav-link" href="/Calipso/OperacionesComprobantes/">Operaciones Comprobantes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES COMPROBANTES"); ?> class="nav-link" href="/OtrosComprobantes/">Otros Comprobantes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES COMPROBANTES"); ?> class="nav-link" href="/Calipso/OtrosComprobantes/">Otros Comprobantes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"NCF ANULACIONES"); ?> class="nav-link" href="/NCFAnulaciones/">NCF Anulaciones</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"NCF ANULACIONES"); ?> class="nav-link" href="/Calipso/NCFAnulaciones/">NCF Anulaciones</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS GRABADAS/EXENTAS VENTAS"); ?> class="nav-link" href="/VentasGrabadasExentasventas/">Ventas Grabadas/Exentas ventas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS GRABADAS/EXENTAS VENTAS"); ?> class="nav-link" href="/Calipso/VentasGrabadasExentasventas/">Ventas Grabadas/Exentas ventas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMA DE PAGOS"); ?>  class="nav-link" href="/FormadePagos/">Forma de Pagos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMA DE PAGOS"); ?>  class="nav-link" href="/Calipso/FormadePagos/">Forma de Pagos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMULARIO 607"); ?> class="nav-link" href="/Formulario607/">Formulario 607</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMULARIO 607"); ?> class="nav-link" href="/Calipso/Formulario607/">Formulario 607</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMULARIO 608"); ?>  class="nav-link" href="/Formulario608/">Formulario 608</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FORMULARIO 608"); ?>  class="nav-link" href="/Calipso/Formulario608/">Formulario 608</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURA DETALLES"); ?> class="nav-link" href="/FacturasDetallas/">Facturas Detalles</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURA DETALLES"); ?> class="nav-link" href="/Calipso/FacturasDetallas/">Facturas Detalles</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES GENERALES"); ?> class="nav-link" href="/TransaccionesGenerales/">Transacciones Generales</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES GENERALES"); ?> class="nav-link" href="/Calipso/TransaccionesGenerales/">Transacciones Generales</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -410,25 +410,25 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-7" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/FacturaEmitidas1/">Factura Emitidas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/Calipso/FacturaEmitidas1/">Factura Emitidas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARCHIVOS GENERAL"); ?> class="nav-link" href="/ArchivosGeneral/">Archivos General</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARCHIVOS GENERAL"); ?> class="nav-link" href="/Calipso/ArchivosGeneral/">Archivos General</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLASIFICADO POR RANGO"); ?> class="nav-link" href="/ClasificadoporRango/">Clasificado por Rango</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLASIFICADO POR RANGO"); ?> class="nav-link" href="/Calipso/ClasificadoporRango/">Clasificado por Rango</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BALANCE DE CLIENTES"); ?> class="nav-link" href="/BalancedeClientes/">Balance de Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BALANCE DE CLIENTES"); ?> class="nav-link" href="/Calipso/BalancedeClientes/">Balance de Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS PENDIENTES"); ?> class="nav-link" href="/FacturasPendientes/">Facturas Pendientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS PENDIENTES"); ?> class="nav-link" href="/Calipso/FacturasPendientes/">Facturas Pendientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CHEQUES DEVUELTOS"); ?> class="nav-link" href="/ChequesDevueltos/"><i class="fas fa-id-card"></i>Cheques Devueltos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CHEQUES DEVUELTOS"); ?> class="nav-link" href="/Calipso/ChequesDevueltos/"><i class="fas fa-id-card"></i>Cheques Devueltos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ANALISIS POR VENDEDOR"); ?> class="nav-link" href="/AnalisisPorVendedor/">Analisis Por Vendedor</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ANALISIS POR VENDEDOR"); ?> class="nav-link" href="/Calipso/AnalisisPorVendedor/">Analisis Por Vendedor</a>
                                                     </li>
                                                 </ul>
                                             </div>  
@@ -437,19 +437,19 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-8" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"DETALLES DE DOCUEMENTOS"); ?> class="nav-link" href="/DetallesdeDocumentos/">Detalles de Documentos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"DETALLES DE DOCUEMENTOS"); ?> class="nav-link" href="/Calipso/DetallesdeDocumentos/">Detalles de Documentos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION DOC.PEND.CUENTAS"); ?> class="nav-link" href="/RelacionDoc.Pend.Cuentas/">Relacion Doc. Pend. Cuentas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION DOC.PEND.CUENTAS"); ?> class="nav-link" href="/Calipso/RelacionDoc.Pend.Cuentas/">Relacion Doc. Pend. Cuentas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CARTAS ESTADO DE CTAS DEL CLIENTE"); ?> class="nav-link" href="/CartasEstadodeCtasdelCliente/"> Cartas Estado de Ctas del Cliente</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CARTAS ESTADO DE CTAS DEL CLIENTE"); ?> class="nav-link" href="/Calipso/CartasEstadodeCtasdelCliente/"> Cartas Estado de Ctas del Cliente</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CARTA POR UN RANGO"); ?> class="nav-link" href="/CartasPorunRango/">Cartas Por un Rango</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CARTA POR UN RANGO"); ?> class="nav-link" href="/Calipso/CartasPorunRango/">Cartas Por un Rango</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION DOC.PEND.FORM"); ?> class="nav-link" href="/RelacionDoc.Pend.Form/">Relacion Doc. Pend. Form</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION DOC.PEND.FORM"); ?> class="nav-link" href="/Calipso/RelacionDoc.Pend.Form/">Relacion Doc. Pend. Form</a>
                                                     </li>
                                                 </ul>
                                                 </div>  
@@ -458,10 +458,10 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-5-9" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES INDIVIDUAL"); ?> class="nav-link" href="/ClientesIndividual/">Clientes Individual</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES INDIVIDUAL"); ?> class="nav-link" href="/Calipso/ClientesIndividual/">Clientes Individual</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"HISTORIAL POR VENDEDOR"); ?> class="nav-link" href="/HistorialporVendedor/">Historial por Vendedor</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"HISTORIAL POR VENDEDOR"); ?> class="nav-link" href="/Calipso/HistorialporVendedor/">Historial por Vendedor</a>
                                                     </li>
                                                     
                                                 </ul>
@@ -471,10 +471,10 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-6-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RESUMEN TIPOS CLIENTES"); ?> class="nav-link" href="/ResumenTiposClientes/">Resumen Tipos Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RESUMEN TIPOS CLIENTES"); ?> class="nav-link" href="/Calipso/ResumenTiposClientes/">Resumen Tipos Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RESUMEN VENDEDORES"); ?> class="nav-link" href="/ResumenVendedores/">Resumen Vendedores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RESUMEN VENDEDORES"); ?> class="nav-link" href="/Calipso/ResumenVendedores/">Resumen Vendedores</a>
                                                     </li>
                                                     
                                                 </ul>
@@ -484,29 +484,29 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-6-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"COBRO A CREDITO"); ?> class="nav-link" href="/CobroaCredito/">Cobro a Credito</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"COBRO A CREDITO"); ?> class="nav-link" href="/Calipso/CobroaCredito/">Cobro a Credito</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS DE CONTADO"); ?> class="nav-link" href="/VentasdeContado/">Ventas de Contado</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS DE CONTADO"); ?> class="nav-link" href="/Calipso/VentasdeContado/">Ventas de Contado</a>
                                                     </li>
                                                     
                                                 </ul>
                                                 </div>  
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/FacturaEmitidas2/"><i class="fas fa-id-card"></i>Factura Emitidas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"FACTURAS EMITIDAS"); ?> class="nav-link" href="/Calipso/FacturaEmitidas2/"><i class="fas fa-id-card"></i>Factura Emitidas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE INGRESOS"); ?> class="nav-link" href="/RecibosdeIngesos/"><i class="fas fa-plus-circle"></i>Recibos de Ingesos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RECIBOS DE INGRESOS"); ?> class="nav-link" href="/Calipso/RecibosdeIngesos/"><i class="fas fa-plus-circle"></i>Recibos de Ingesos</a>
                                                     </li>
                                                     <li class="nav-item">
                                             <a <?php echo $login->Inicio_Permisos($role,"TRANSACCIONES DIARIAS"); ?> class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6-3" aria-controls="submenu-6-3"><i class="fas fa-id-card-alt"></i>Transacciones Diarias</a>
                                             <div id="submenu-6-3" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES DIARIAS"); ?> class="nav-link" href="/OperacionesDiarias/"><i class="fas fa-plus-circle"></i>Operaciones Diarias</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES DIARIAS"); ?> class="nav-link" href="/Calipso/OperacionesDiarias/"><i class="fas fa-plus-circle"></i>Operaciones Diarias</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES POR VENDEDOR"); ?> class="nav-link" href="/OperacionesporVendedor/"><i class="fas fa-id-card"></i>Operaciones por Vendedor</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"OPERACIONES POR VENDEDOR"); ?> class="nav-link" href="/Calipso/OperacionesporVendedor/"><i class="fas fa-id-card"></i>Operaciones por Vendedor</a>
                                                     </li>
                                                     
                                                 </ul>
@@ -524,10 +524,10 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-6-5" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLASIFICA POR TIPOS"); ?> class="nav-link" href="/ClasificaporTipos/">Clasifica por Tipos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLASIFICA POR TIPOS"); ?> class="nav-link" href="/Calipso/ClasificaporTipos/">Clasifica por Tipos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"INCLUYE SUB-TIPOS"); ?> class="nav-link" href="/IncluyeSub-Tipos/">Incluye Sub-Tipos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"INCLUYE SUB-TIPOS"); ?> class="nav-link" href="/Calipso/IncluyeSub-Tipos/">Incluye Sub-Tipos</a>
                                                     </li>
                                                     
                                                 </ul>
@@ -537,40 +537,40 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-6-6" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ESTADISTICA DE VENTAS"); ?> class="nav-link" href="/EstadísticadeVentas/">Estadística de Ventas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ESTADISTICA DE VENTAS"); ?> class="nav-link" href="/Calipso/EstadísticadeVentas/">Estadística de Ventas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION MINIMO MAXIMO"); ?> class="nav-link" href="/RelaciónMínimoMaximo/">Relación MínimoMaximo</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"RELACION MINIMO MAXIMO"); ?> class="nav-link" href="/Calipso/RelaciónMínimoMaximo/">Relación MínimoMaximo</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TODOS LOS ALMACENES"); ?> class="nav-link" href="/TodoslosAlmacenes/">Todos los Almacenes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TODOS LOS ALMACENES"); ?> class="nav-link" href="/Calipso/TodoslosAlmacenes/">Todos los Almacenes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR ARTICULOS 1"); ?> class="nav-link" href="/VentasporArticulos1/">Ventas por Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS POR ARTICULOS 1"); ?> class="nav-link" href="/Calipso/VentasporArticulos1/">Ventas por Articulos</a>
                                                     </li>
 
                                                 </div> 
                                                 <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"LISTA DE PRECIO"); ?> class="nav-link" href="/ListadePrecio/"><i class="fas fa-donate"></i>Lista de Precio</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"LISTA DE PRECIO"); ?> class="nav-link" href="/Calipso/ListadePrecio/"><i class="fas fa-donate"></i>Lista de Precio</a>
                                                     </li>
                                                     <li class="nav-item">
                                             <a <?php echo $login->Inicio_Permisos($role,"MAESTROS 1"); ?> class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6-7" aria-controls="submenu-6-7"><i class="fas fa-id-card-alt"></i>Maestros </a>
                                             <div id="submenu-6-7" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS 1"); ?> class="nav-link" href="/Artículos/">Artículos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS 1"); ?> class="nav-link" href="/Calipso/Artículos/">Artículos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS SUB-TIPOS "); ?> class="nav-link" href="/TiposSub-Tipos/">Tipos/Sub-Tipos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"TIPOS SUB-TIPOS "); ?> class="nav-link" href="/Calipso/TiposSub-Tipos/">Tipos/Sub-Tipos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES-3009"); ?> class="nav-link" href="/Clientes/">Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES-3009"); ?> class="nav-link" href="/Calipso/Clientes/">Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES-3009"); ?> class="nav-link" href="/Suplidores/">Suplidores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES-3009"); ?> class="nav-link" href="/Calipso/Suplidores/">Suplidores</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENDEDORES"); ?> class="nav-link" href="/Vendedores/">Vendedores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENDEDORES"); ?> class="nav-link" href="/Calipso/Vendedores/">Vendedores</a>
                                                     </li>
 
                                                 </div>
@@ -579,22 +579,22 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-6-8" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS 2"); ?> class="nav-link" href="/Artículos1/">Artículos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS 2"); ?> class="nav-link" href="/Calipso/Artículos1/">Artículos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES 1"); ?> class="nav-link" href="/Clientes1/">Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES 1"); ?> class="nav-link" href="/Calipso/Clientes1/">Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES 1"); ?> class="nav-link" href="/Suplidores1/">Suplidores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES 1"); ?> class="nav-link" href="/Calipso/Suplidores1/">Suplidores</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENDEDORES  1"); ?> class="nav-link" href="/Vendedores1/">Vendedores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENDEDORES  1"); ?> class="nav-link" href="/Calipso/Vendedores1/">Vendedores</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BARRAS PRE"); ?> class="nav-link" href="/BarrasPRE/">Barras PRE</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BARRAS PRE"); ?> class="nav-link" href="/Calipso/BarrasPRE/">Barras PRE</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"BARRAS SIN"); ?> class="nav-link" href="/BarrasSIN/">Barras SIN</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"BARRAS SIN"); ?> class="nav-link" href="/Calipso/BarrasSIN/">Barras SIN</a>
                                                     </li>
 
                                                 </div>
@@ -615,28 +615,28 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-7-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PRECIOS ARTICULOS"); ?> class="nav-link" href="/PreciosArticulos/">Precios Articulos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PRECIOS ARTICULOS"); ?> class="nav-link" href="/Calipso/PreciosArticulos/">Precios Articulos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS A CLIENTES"); ?> class="nav-link" href="/CreditoaClientes/">Crédito a Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREDITOS A CLIENTES"); ?> class="nav-link" href="/Calipso/CreditoaClientes/">Crédito a Clientes</a>
                                                     </li>
                                                     
                                                 </div>
                                         <li class="nav-item">
-                                            <a <?php echo $login->Inicio_Permisos($role,"ESPECIALES DE VENTAS"); ?> class="nav-link" href="/EspecialesdeVentas/"><i class="fas fa-hand-holding-usd"></i>Especiales de Ventas</a>
+                                            <a <?php echo $login->Inicio_Permisos($role,"ESPECIALES DE VENTAS"); ?> class="nav-link" href="/Calipso/EspecialesdeVentas/"><i class="fas fa-hand-holding-usd"></i>Especiales de Ventas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a <?php echo $login->Inicio_Permisos($role,"COMBOS ESPECIALES"); ?> class="nav-link" href="/CombosEspeciales/"><i class="fas fa-cubes"></i>Combos Especiales</a>
+                                            <a <?php echo $login->Inicio_Permisos($role,"COMBOS ESPECIALES"); ?> class="nav-link" href="/Calipso/CombosEspeciales/"><i class="fas fa-cubes"></i>Combos Especiales</a>
                                         </li>
                                          <li class="nav-item">
                                             <a <?php echo $login->Inicio_Permisos($role,"CAMBIOS DE PRECIOS"); ?> class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7-2" aria-controls="submenu-7-2"><i class="fas fa-balance-scale"></i>Cambios de Precios </a>
                                             <div id="submenu-7-2" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PRECIO POR RANGO"); ?> class="nav-link" href="/PrecioporRango/">Precio por Rango</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PRECIO POR RANGO"); ?> class="nav-link" href="/Calipso/PrecioporRango/">Precio por Rango</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS INDIVIDUALES"); ?> class="nav-link" href="/ArticulosIndividuales/">Articulos Individuales</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS INDIVIDUALES"); ?> class="nav-link" href="/Calipso/ArticulosIndividuales/">Articulos Individuales</a>
                                                     </li>
                                                      
 
@@ -646,16 +646,16 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-7-3" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS 2"); ?> class="nav-link" href="/Ventas/">Ventas</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"VENTAS 2"); ?> class="nav-link" href="/Calipso/Ventas/">Ventas</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES 2"); ?> class="nav-link" href="/Clientes2/">Clientes</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CLIENTES 2"); ?> class="nav-link" href="/Calipso/Clientes2/">Clientes</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES 2"); ?> class="nav-link" href="/Suplidores2/">Suplidores</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"SUPLIDORES 2"); ?> class="nav-link" href="/Calipso/Suplidores2/">Suplidores</a>
                                                     </li>
                                                      <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"INVENTARIO 1"); ?> class="nav-link" href="/Inventario/">Inventario</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"INVENTARIO 1"); ?> class="nav-link" href="/Calipso/Inventario/">Inventario</a>
                                                     </li>
 
                                                 </div>
@@ -664,25 +664,25 @@ $role =  $_SESSION["role"];
                                             <div id="submenu-7-4" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"INVENTARIO FISICO"); ?> class="nav-link" href="/InventarioFisico/">Inventario Físico</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"INVENTARIO FISICO"); ?> class="nav-link" href="/Calipso/InventarioFisico/">Inventario Físico</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS DESDE ALM"); ?> class="nav-link" href="/ArticulosDesdeAlm./">Articulos Desde Alm.</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"ARTICULOS DESDE ALM"); ?> class="nav-link" href="/Calipso/ArticulosDesdeAlm./">Articulos Desde Alm.</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CUENTAS POR COBRAR"); ?> class="nav-link" href="/CuentasporCobrar/">Cuentas por Cobrar</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CUENTAS POR COBRAR"); ?> class="nav-link" href="/Calipso/CuentasporCobrar/">Cuentas por Cobrar</a>
                                                     </li>
                                                      <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"PLANES DE CREDITO"); ?> class="nav-link" href="/PlanesdeCredito/">Planes de Crédito</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"PLANES DE CREDITO"); ?> class="nav-link" href="/Calipso/PlanesdeCredito/">Planes de Crédito</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR CXC"); ?> class="nav-link" href="/ModificarCXC/">Modificar CXC</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR CXC"); ?> class="nav-link" href="/Calipso/ModificarCXC/">Modificar CXC</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR FACTURACION"); ?> class="nav-link" href="/ModificarFacturaCion/">Modificar Facturación</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR FACTURACION"); ?> class="nav-link" href="/Calipso/ModificarFacturaCion/">Modificar Facturación</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR CXP"); ?> class="nav-link" href="/ModificarCXP/">Modificar CXP</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"MODIFICAR CXP"); ?> class="nav-link" href="/Calipso/ModificarCXP/">Modificar CXP</a>
                                                     </li>
 
                                                 </div>
@@ -694,10 +694,10 @@ $role =  $_SESSION["role"];
                                 <div id="submenu-8" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"GRUPOS"); ?> class="nav-link" href="/GRUPOS/"> Grupos</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"GRUPOS"); ?> class="nav-link" href="/Calipso/GRUPOS/"> Grupos</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a <?php echo $login->Inicio_Permisos($role,"CREAR USUARIOS"); ?> class="nav-link" href="/CrearUsuariosNuevo/">Usuario</a>
+                                                        <a <?php echo $login->Inicio_Permisos($role,"CREAR USUARIOS"); ?> class="nav-link" href="/Calipso/CrearUsuariosNuevo/">Usuario</a>
                                                     </li>
                                     </ul>
                                 </div>

@@ -2,9 +2,9 @@
 
 <?php
     if ($peticionAjax) {
-        require_once "../core/configApp.php";
+        require_once "../core/configAPP.php";
     } else {
-       require_once "./core/configApp.php";
+       require_once "./core/configAPP.php";
     }
     class mainModel{
         protected function conectar()

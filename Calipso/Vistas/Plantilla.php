@@ -137,7 +137,7 @@
 	<?php 
 
 		$peticionAjax = false;
-		require_once "./controladores/vistasControlador.php";
+		require_once "./Controladores/VistasControlador.php";
 
 		$vt = new vistasControlador();
 		$ruta = $vt->obtener_vistas_controlador();

@@ -67,6 +67,7 @@
 
               <form class="FormularioAjaxNuevo FormularioAjax " data-form="save"
               action="<?php echo SERVERURL;?>Ajax/TipoVAjax.php" method="POST">
+              <input type="text" name="ID" id="ID" style="display:none">
                 <div class="form-row mb-8">
                   <div class="col-lg-6 col-md-6 col-sm-8 ">
                     <label>Nombre del tipo de Cliente</label>
